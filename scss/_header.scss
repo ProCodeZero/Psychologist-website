@@ -1,26 +1,27 @@
 .header {
-	background-color: black;
-	position: sticky;
-	height: 70px;
-	top: 0;
+	height: 0px;
+	width: 100%;
 	z-index: 10;
+	max-width: none;
 }
 
 .header__container {
 	margin: 0 auto;
-	padding: 0 10%;
+	max-width: none;
+	padding: 1.5% 2.3%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	min-height: 70px;
 	position: relative;
+	margin: 0px 2% 0px 2%;
 }
 
 .logo {
-	font-weight: 300;
 	font-size: 24px;
 	cursor: default;
 	letter-spacing: .2em;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 // convert to burger menu
@@ -30,14 +31,11 @@
 	cursor: pointer;
 }
 
-.header__navigation {
-	z-index: 2;
-}
-
 .navigation__list {
 	display: flex;
 	gap: 10%;
-
+	justify-content: end;
+	text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
 .popup {
@@ -113,6 +111,7 @@
 	.close-popup::after {
 		transform: rotate(-45deg);
 	}
+
 	.navigation {
 		display: none;
 	}
@@ -185,19 +184,42 @@
 		display: block;
 		position: absolute;
 		left: 0;
-		width: 0;
+		top: 60%;
+		opacity: 0;
 		height: 2px;
-		background-color: white;
+		background-color: rgb(252, 120, 142);
 		content: "";
-		transition: width 0.3s ease-out;
+		transition: all 0.3s ease;
 	}
 
 	:hover::after {
 		width: 100%;
+		top: 100%;
+		opacity: 1;
 	}
 
 	:active {
-		width: 0;
+		width: 100%;
+		top: 100%;
+		opacity: 1;
+	}
+}
+.navigation__item--active{
+	text-decoration: none;
+	transition: all 0.8s;
+	position: relative;
+
+	::after {
+		display: block;
+		position: absolute;
+		left: 0;
+		width: 100%;
+		top: 100%;
+		opacity: 1;
+		height: 2px;
+		background-color: rgb(252, 120, 142);
+		content: "";
+		transition: all 0.3s ease;
 	}
 }
 

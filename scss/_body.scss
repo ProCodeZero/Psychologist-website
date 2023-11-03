@@ -27,7 +27,7 @@
 	justify-content: center;
 	width: 100%;
 	// Adaptive position for back
-	background-position: center;
+	background-position: left;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: #1d1d1d;
@@ -41,37 +41,41 @@
 	max-width: none;
 	height: 100%;
 	width: 100%;
-	padding: 50px 50px 50px 10%;
+	padding: 50px 50px 50px 15%;
 	display: flex;
 	justify-content: flex-start;
 	align-content: start;
 	background-image: url(/pictures/background_for_coursore_move_effect.png);
 	background-size: cover;
 }
-.greeting__wrap{
+
+.greeting__wrap {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 }
+
 .greeting__title {
-	font-size: 120%;
+	font-size: 84px;
 	text-align: left;
+	text-shadow: 1px 2px 2px rgb(252, 120, 142);
 }
 
 .greeting__paragraph {
 	text-align: left;
+	font-size: 34px;
+	text-shadow: 1px 1px 1px rgb(252, 120, 142);
 }
-
 
 .greeting__btn-to-header {
 	position: absolute;
-	width: 56px;
-	height: 56px;
-	bottom: 5%;
-	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 125" enable-background="new 0 0 100 100" xml:space="preserve"><polygon fill="%23ffffff" points="53.929,68.161 53.932,68.326 95.287,28.067 87.389,28.534 50.707,65.216 13.077,27.585 4.704,27.593 45.588,68.322 49.757,72.415 "/></svg>');
+	width: 74px;
+	height: 74px;
+	bottom: -1%;
+	background-image: url("../pictures/icons/greeeting/greeting_btn.svg");
 	background-repeat: no-repeat;
 	background-position: center 50%;
-	animation: 1s scroll-down infinite forwards;
+	animation: 0.5s scroll-down infinite forwards;
 
 	@media (max-height: 480px) {
 		bottom: 5%;
