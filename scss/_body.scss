@@ -144,99 +144,40 @@
 	margin-bottom: 20px;
 }
 
-// ------------PORTFOLIO------------------------------------------------------------>
-.main__portfolio {
-	background-color: rgb(53, 53, 53);
-	padding: 70px 0px;
+// ------------SERVICES------------------------------------------------------------>
+.main__services {
 }
-
-.portfolio__title {
-	margin-bottom: 40px;
+.services {
 }
-
-.portfolio__list {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-	gap: 5%;
+.services__container {
 }
-
-.portfolio__item {
-	width: calc(90% / 2);
-	margin-bottom: 50px;
-	border-bottom: black 3px solid;
-	border-radius: 25px;
-
-	@media (max-width: 675px) {
-		width: 90%;
-	}
+.container {
 }
-
-.portfolio__link {
-	color: inherit;
+.services__title {
 }
-
-.portfolio__link:hover {
-	color: #0075FF;
-
-	.portfolio__image-wrapper::before {
-		opacity: 1;
-	}
-
-	.portfolio__image-wrapper:after {
-		opacity: 1;
-		color: white;
-		top: 50%;
-	}
+.main-title {
 }
-
-.portfolio__image-wrapper {
-	margin-bottom: 15px;
-	position: relative;
+.services__list {
 }
-
-.portfolio__image-wrapper::before {
-	content: "";
-	background-color: rgba(255, 255, 255, 0.5);
-	height: 100%;
-	width: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	display: block;
-	opacity: 0;
-	transition: all 0.3s ease;
+.services__item {
 }
-
-.portfolio__image-wrapper::after {
-	content: "Перейти";
-	position: absolute;
-	top: 30%;
-	left: 50%;
-	color: inherit;
-	background-color: #0075FF;
-	padding: 20px 50px;
-	border-radius: 40px;
-	transform: translate(-50%, -50%);
-	z-index: 2;
-	display: block;
-	opacity: 0;
-	transition: all 0.5s ease;
+.services__link {
 }
-
-.portfolio__image {
-	max-width: 100%;
-	display: block;
-	margin: 0 auto;
-	z-index: 0;
+.services__image-wrapper {
 }
-
-.item__title {
-	line-height: 2;
-	font-weight: 700;
-	transition: all 0.3s ease;
+.services__image {
+}
+.services__hover-animation {
+}
+.hover-animation {
+}
+.hover-animation__caption {
+}
+.hover-animation__link {
+}
+.services__out-link {
+}
+.main-link {
 }
 
 // ------------CONTACT------------------------------------------------------------>

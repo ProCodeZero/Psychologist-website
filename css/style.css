@@ -105,7 +105,6 @@ body {
 }
 
 .container {
-  max-width: 1220px;
   width: 100%;
   margin: 0 auto;
   padding: 0px 25px;
@@ -361,94 +360,62 @@ body {
 
 .footer {
   background-color: black;
-  border-top: 1px outset #0075FF;
+  height: 250px;
 }
 
 .footer__container {
+  height: 100%;
+  padding: 3% 5%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding: 20px 7% 30px;
-  gap: 10%;
-}
-@media (max-width: 400px) {
-  .footer__container {
-    flex-direction: column;
-  }
-  .footer__container .owner {
-    width: 100%;
-    display: flex;
-    gap: 5%;
-    justify-content: space-around;
-    text-align: left;
-    margin-bottom: 25px;
-    align-items: baseline;
-  }
-  .footer__container .owner .owner__name {
-    width: 45%;
-  }
-  .footer__container .owner .owner__logo {
-    width: 45%;
-    font-size: 16px;
-    padding-bottom: 0;
-  }
-  .footer__container .info {
-    width: 100%;
-    display: flex;
-    flex-direction: column-reverse;
-    gap: 15px;
-    justify-content: space-around;
-    text-align: left;
-  }
-  .footer__container .info .info__block-1 {
-    font-size: 13px;
-  }
-  .footer__container .info .info__block-2 {
-    font-size: 13px;
-  }
+  align-items: center;
 }
 
-.footer__owner {
-  text-align: left;
-}
-.footer__owner :not(:last-child) {
-  padding-bottom: 15px;
-}
-@media (max-width: 600px) {
-  .footer__owner {
-    font-size: 14px;
-  }
+.menu__list {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
 }
 
-@media (max-width: 600px) {
-  .owner__logo {
-    font-size: 20px;
-  }
+.menu__item {
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.menu__item ::after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  background-color: white;
+  content: "";
+  width: 0;
+  height: 1px;
+}
+.menu__item ::before {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  background-color: white;
+  content: "";
+  width: 0;
+  height: 1px;
+}
+.menu__item ::after, .menu__item ::before {
+  transition: width 0.3s ease-out;
 }
 
-.owner__name {
-  letter-spacing: 0.07em;
-  line-height: 1.5;
+.menu__item:hover ::after, .menu__item:hover ::before {
+  width: 50%;
+  transition: width 0.3s ease-out;
 }
 
-.footer__info {
-  text-align: left;
-}
-@media (max-width: 600px) {
-  .footer__info {
-    font-size: 14px;
-  }
+.menu__link {
+  color: white;
 }
 
-.info :not(:last-child) {
-  padding-bottom: 15px;
-}
-
-.info__block-1 {
-  line-height: 1.5;
-}
-
-.info__block-2 {
-  line-height: 1.5;
+.info {
+  text-align: center;
 }
 
 .main {
@@ -582,99 +549,6 @@ body {
   width: 60px;
   height: 60px;
   margin-bottom: 20px;
-}
-
-.main__portfolio {
-  background-color: rgb(53, 53, 53);
-  padding: 70px 0px;
-}
-
-.portfolio__title {
-  margin-bottom: 40px;
-}
-
-.portfolio__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 5%;
-}
-
-.portfolio__item {
-  width: 45%;
-  margin-bottom: 50px;
-  border-bottom: black 3px solid;
-  border-radius: 25px;
-}
-@media (max-width: 675px) {
-  .portfolio__item {
-    width: 90%;
-  }
-}
-
-.portfolio__link {
-  color: inherit;
-}
-
-.portfolio__link:hover {
-  color: #0075FF;
-}
-.portfolio__link:hover .portfolio__image-wrapper::before {
-  opacity: 1;
-}
-.portfolio__link:hover .portfolio__image-wrapper:after {
-  opacity: 1;
-  color: white;
-  top: 50%;
-}
-
-.portfolio__image-wrapper {
-  margin-bottom: 15px;
-  position: relative;
-}
-
-.portfolio__image-wrapper::before {
-  content: "";
-  background-color: rgba(255, 255, 255, 0.5);
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  display: block;
-  opacity: 0;
-  transition: all 0.3s ease;
-}
-
-.portfolio__image-wrapper::after {
-  content: "Перейти";
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  color: inherit;
-  background-color: #0075FF;
-  padding: 20px 50px;
-  border-radius: 40px;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  display: block;
-  opacity: 0;
-  transition: all 0.5s ease;
-}
-
-.portfolio__image {
-  max-width: 100%;
-  display: block;
-  margin: 0 auto;
-  z-index: 0;
-}
-
-.item__title {
-  line-height: 2;
-  font-weight: 700;
-  transition: all 0.3s ease;
 }
 
 .main__contact {
