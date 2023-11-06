@@ -420,6 +420,12 @@
 }
 
 @media (max-width: 767px) {
+	.greeting__title{
+		font-size: 56px;
+	}
+	.greeting__paragraph{
+		font-size: 32px;
+	}
 	.services__list {
 		flex-direction: column;
 		gap: 15px;
@@ -435,16 +441,6 @@
 
 	.hover-animation__text {
 		font-size: 36px;
-	}
-}
-
-@media (max-width: 560px) {
-	.services__item {
-		height: 400px;
-	}
-
-	.personality__container {
-		gap: 0;
 	}
 }
 
@@ -475,18 +471,32 @@
 }
 
 @media (max-width: 560px) {
+	.services__item {
+		height: 400px;
+	}
+
+	.personality__container {
+		gap: 0;
+	}
 	.personality__img {
 		right: 5%;
 	}
 }
 
 @media (max-width: 530px) {
+	.greeting__container{
+		padding-left: 20px;
+	}
+	.hover-animation__text{
+		font-size: 32px;
+	}
 	.personality__container {
 		position: relative;
 	}
 
 	.personality__img {
 		width: 45%;
+		top: 25%;
 	}
 
 	.personality__subtitle {
@@ -495,14 +505,33 @@
 }
 
 @media (max-width: 440px) {
+	.services__item{
+		height: 300px;
+	}
+	.hover-animation__text{
+		font-size: 26px;
+	}
 	.personality__img {
 		right: 15%;
 		top: 25%;
 		width: 50%;
 	}
 }
+@media (max-width: 400px) {
+	.greeting__paragraph{
+		font-size: 26px;
+		font-weight: 700;
+		text-shadow: 2px 2px 2px rgb(252, 120, 142);
+	}
+}
 
 @media (max-width: 380px) {
+	.services__item{
+		height: 250px;
+	}
+	.hover-animation__text{
+		font-size: 22px;
+	}
 	.personality__title {
 		margin-bottom: 15px;
 	}

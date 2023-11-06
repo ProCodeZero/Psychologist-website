@@ -94,3 +94,18 @@ body {
 		padding: 15px 20px;
 	}
 }
+@media (max-width: 440px) {
+	.main-link{
+		width: 80%;
+	}
+}
+@media (max-width: 400px) {
+	.main-link{
+		width: 90%;
+	}
+}
+@media (max-width: 360px) {
+	.main-link{
+		font-size: 12px;
+	}
+}
