@@ -104,7 +104,6 @@ body {
 }
 
 .container {
-  width: 100%;
   margin: 0 auto;
   padding: 0px 25px;
   text-align: center;
@@ -500,10 +499,10 @@ body {
 }
 
 .services__list {
-  width: 100%;
+  padding: 0 3%;
   display: grid;
-  grid-gap: 5%;
-  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3%;
+  grid-template-columns: repeat(2, 50%);
 }
 
 .services__item {
@@ -514,6 +513,8 @@ body {
 .services__image-wrapper {
   background: #000000;
   transition: all 0.3s ease-out;
+  width: 100%;
+  overflow: hidden;
 }
 
 .services__image-wrapper::before {
@@ -553,13 +554,14 @@ body {
 
 .services__image-wrapper:hover .services__image {
   transition: all 0.3s ease-out;
+  transform: scale(1.1, 1.1);
   opacity: 0.8;
 }
 
 .services__image {
-  width: 100%;
-  opacity: 0.7;
+  opacity: 0.6;
   transition: all 0.3s ease-out;
+  max-width: 100%;
 }
 
 .services__hover-animation {
