@@ -540,7 +540,19 @@
 }
 
 @media (max-width: 360px) {
+	.personality__subtitle::after{
+		width: 2px;
+		height: 140px;
+		top: 62%;
+		left: 0;
+	}
+	.personality__title{
+		font-size: 22px;
+	}
 	.personality__img {
 		top: 24%;
+	}
+	.contacts__title{
+		font-size: 22px;
 	}
 }
