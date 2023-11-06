@@ -36,7 +36,8 @@ body {
 
 .main {
 	.main-link:hover {
-		background: rgb(255, 159, 175);
+		background: rgb(255, 171, 185);
+		color: rgb(29, 29, 29);
 		transition: all 0.3s ease;
 	}
 }
@@ -52,10 +53,6 @@ body {
 	color: black;
 	font-size: 40px;
 	font-weight: 600;
-
-	@media (max-width: 701px) {
-		font-size: 28px;
-	}
 }
 
 .main-link {
@@ -80,3 +77,12 @@ body {
 @import "_header";
 @import "_footer";
 @import "_body";
+
+@media (max-width: 979px) {
+	.container{
+		margin-top: 50px;
+	}
+	.header__container{
+		margin-top: 0;
+	}
+}
