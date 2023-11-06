@@ -249,14 +249,14 @@
 	position: relative;
 }
 
-.personality__text::before {
+.personality__list-item::before {
 	content: '';
 	background-image: url("/pictures/icons/main/rhombus.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
-	left: -25px;
-	bottom: 0;
+	left: 0;
+	bottom: 50%;
 	height: 15px;
 	width: 15px;
 }
@@ -365,7 +365,7 @@
 	}
 }
 
-@media (max-width: 979px) {
+@media (max-width: 980px) {
 	.greeting__title {
 		font-size: 65px;
 		font-weight: 00;
@@ -385,21 +385,23 @@
 		display: none;
 	}
 
-	.services__out-link {
-		width: 70%;
-	}
-
-	.services__out-link {
-		font-size: 18px;
-	}
-
 	.hover-animation__text {
-		font-size: 22px;
+		opacity: 1;
+		top: 40%;
+		transition: all 0.3s ease-out;
 	}
-	.personality__subtitle{
+
+	.hover-animation__link {
+		top: 70%;
+		opacity: 1;
+		transition: all 0.3s ease-out;
+	}
+
+	.personality__subtitle {
 		padding-bottom: 60px;
 	}
-	.personality__text{
+
+	.personality__text {
 		font-weight: normal;
 	}
 
@@ -416,15 +418,129 @@
 		margin-bottom: 50px;
 	}
 }
+
 @media (max-width: 767px) {
-	.services__list{
+	.services__list {
 		flex-direction: column;
 		gap: 15px;
 	}
-	.services__item{
-		height: 250px;
+
+	.services__item {
+		height: 550px;
 	}
-	.services__image{
-		height: 20%;
+
+	.services__image-wrapper {
+		height: 100%;
+	}
+
+	.hover-animation__text {
+		font-size: 36px;
+	}
+}
+
+@media (max-width: 560px) {
+	.services__item {
+		height: 400px;
+	}
+
+	.personality__container {
+		gap: 0;
+	}
+}
+
+@media (max-width: 660px) {
+	.personality__img {
+		position: absolute;
+		right: 10%;
+		width: 30%;
+		border: 2px solid rgb(252, 120, 142);
+	}
+
+	.personality__title {
+		font-size: 32px;
+		margin-bottom: 40px;
+	}
+
+	.personality__subtitle {
+		margin-bottom: 60px;
+	}
+
+	.personality__subtitle::after {
+		bottom: 0;
+	}
+
+	.contacts__img {
+		display: none;
+	}
+}
+
+@media (max-width: 560px) {
+	.personality__img {
+		right: 5%;
+	}
+}
+
+@media (max-width: 530px) {
+	.personality__container {
+		position: relative;
+	}
+
+	.personality__img {
+		width: 45%;
+	}
+
+	.personality__subtitle {
+		margin-bottom: 250px;
+	}
+}
+
+@media (max-width: 440px) {
+	.personality__img {
+		right: 15%;
+		top: 25%;
+		width: 50%;
+	}
+}
+
+@media (max-width: 380px) {
+	.personality__title {
+		margin-bottom: 15px;
+	}
+
+	.personality__subtitle {
+		margin-bottom: 150px;
+	}
+
+	.personality__img {
+		right: 13%;
+		top: 22%;
+		width: 45%;
+	}
+}
+
+@media (max-width: 360px) {
+	.personality__title {
+		font-size: 28px;
+	}
+
+	.personality__subtitle {
+		font-size: 13px;
+	}
+
+	.personality__text {
+		font-size: 15px;
+		font-weight: 500;
+	}
+
+	.personality__img {
+		right: 13%;
+		top: 22%;
+		width: 45%;
+	}
+}
+
+@media (max-width: 360px) {
+	.personality__img {
+		top: 24%;
 	}
 }

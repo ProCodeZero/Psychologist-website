@@ -400,11 +400,13 @@ body {
   width: 0;
   height: 1px;
 }
-.menu__item ::after, .menu__item ::before {
+.menu__item ::after,
+.menu__item ::before {
   transition: width 0.3s ease-out;
 }
 
-.menu__item:hover ::after, .menu__item:hover ::before {
+.menu__item:hover ::after,
+.menu__item:hover ::before {
   width: 50%;
   transition: width 0.3s ease-out;
 }
@@ -453,6 +455,18 @@ body {
     gap: 5%;
     text-align: center;
     align-items: baseline;
+  }
+}
+@media (max-width: 500px) {
+  .menu__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 20%;
+         column-gap: 20%;
+    row-gap: 60%;
+    justify-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
   }
 }
 .main {
@@ -692,14 +706,14 @@ body {
   position: relative;
 }
 
-.personality__text::before {
+.personality__list-item::before {
   content: "";
   background-image: url("/pictures/icons/main/rhombus.png");
   background-repeat: no-repeat;
   background-size: 100%;
   position: absolute;
-  left: -25px;
-  bottom: 0;
+  left: 0;
+  bottom: 50%;
   height: 15px;
   width: 15px;
 }
@@ -798,7 +812,7 @@ body {
     margin-bottom: 20px;
   }
 }
-@media (max-width: 979px) {
+@media (max-width: 980px) {
   .greeting__title {
     font-size: 65px;
     font-weight: 0;
@@ -814,14 +828,15 @@ body {
   .services__item:last-child {
     display: none;
   }
-  .services__out-link {
-    width: 70%;
-  }
-  .services__out-link {
-    font-size: 18px;
-  }
   .hover-animation__text {
-    font-size: 22px;
+    opacity: 1;
+    top: 40%;
+    transition: all 0.3s ease-out;
+  }
+  .hover-animation__link {
+    top: 70%;
+    opacity: 1;
+    transition: all 0.3s ease-out;
   }
   .personality__subtitle {
     padding-bottom: 60px;
@@ -846,17 +861,116 @@ body {
     gap: 15px;
   }
   .services__item {
-    height: 250px;
+    height: 550px;
   }
-  .services__image {
-    height: 20%;
+  .services__image-wrapper {
+    height: 100%;
+  }
+  .hover-animation__text {
+    font-size: 36px;
   }
 }
-@media (max-width: 979px) {
+@media (max-width: 560px) {
+  .services__item {
+    height: 400px;
+  }
+  .personality__container {
+    gap: 0;
+  }
+}
+@media (max-width: 660px) {
+  .personality__img {
+    position: absolute;
+    right: 10%;
+    width: 30%;
+    border: 2px solid rgb(252, 120, 142);
+  }
+  .personality__title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  .personality__subtitle {
+    margin-bottom: 60px;
+  }
+  .personality__subtitle::after {
+    bottom: 0;
+  }
+  .contacts__img {
+    display: none;
+  }
+}
+@media (max-width: 560px) {
+  .personality__img {
+    right: 5%;
+  }
+}
+@media (max-width: 530px) {
+  .personality__container {
+    position: relative;
+  }
+  .personality__img {
+    width: 45%;
+  }
+  .personality__subtitle {
+    margin-bottom: 250px;
+  }
+}
+@media (max-width: 440px) {
+  .personality__img {
+    right: 15%;
+    top: 25%;
+    width: 50%;
+  }
+}
+@media (max-width: 380px) {
+  .personality__title {
+    margin-bottom: 15px;
+  }
+  .personality__subtitle {
+    margin-bottom: 150px;
+  }
+  .personality__img {
+    right: 13%;
+    top: 22%;
+    width: 45%;
+  }
+}
+@media (max-width: 360px) {
+  .personality__title {
+    font-size: 28px;
+  }
+  .personality__subtitle {
+    font-size: 13px;
+  }
+  .personality__text {
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .personality__img {
+    right: 13%;
+    top: 22%;
+    width: 45%;
+  }
+}
+@media (max-width: 360px) {
+  .personality__img {
+    top: 24%;
+  }
+}
+@media (max-width: 980px) {
   .container {
     margin-top: 50px;
   }
   .header__container {
     margin-top: 0;
+  }
+  .main-link {
+    width: 70%;
+  }
+}
+@media (max-width: 650px) {
+  .main-link {
+    font-size: 14px;
+    padding: 15px 20px;
   }
 }
