@@ -45,7 +45,7 @@
 	display: flex;
 	justify-content: flex-start;
 	align-content: start;
-	background-image: url(/pictures/background_for_coursore_move_effect.png);
+	background-image: url("../pictures/background_for_coursore_move_effect.png");
 	background-size: cover;
 }
 
@@ -251,7 +251,7 @@
 
 .personality__list-item::before {
 	content: '';
-	background-image: url("/pictures/icons/main/rhombus.png");
+	background-image: url("../pictures/icons/main/rhombus.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
@@ -312,7 +312,7 @@
 
 .contacts__text::before {
 	content: '';
-	background-image: url("/pictures/icons/main/rhombus.png");
+	background-image: url("../pictures/icons/main/rhombus.png");
 	background-repeat: no-repeat;
 	background-size: 100%;
 	position: absolute;
