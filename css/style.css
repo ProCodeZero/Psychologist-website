@@ -428,7 +428,7 @@ body {
   bottom: -1%;
   background-image: url("../pictures/icons/greeeting/greeting_btn.svg");
   background-repeat: no-repeat;
-  background-position: 0;
+  background-position: center 50%;
   animation: 0.5s scroll-down infinite forwards;
 }
 @media (max-height: 480px) {
@@ -888,7 +888,7 @@ body {
     font-size: 22px;
   }
   .personality__img {
-    top: 24%;
+    top: 20%;
   }
   .contacts__title {
     font-size: 22px;
