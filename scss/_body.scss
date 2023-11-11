@@ -7,9 +7,10 @@
 // ------------GREETING------------------------------------------------------------>
 .greeting {
 	background: url(../pictures/background_greeting.jpg);
+	background-size: cover;
 	height: 100vh;
 	background-attachment: fixed;
-	background-position: center;
+	background-position: left;
 	background-repeat: no-repeat;
 	position: relative;
 	display: -webkit-box;
@@ -76,10 +77,6 @@
 	background-repeat: no-repeat;
 	background-position: center 50%;
 	animation: 0.5s scroll-down infinite forwards;
-
-	@media (max-height: 480px) {
-		bottom: 5%;
-	}
 }
 
 // ------------SERVICES------------------------------------------------------------>
@@ -420,12 +417,14 @@
 }
 
 @media (max-width: 767px) {
-	.greeting__title{
+	.greeting__title {
 		font-size: 56px;
 	}
-	.greeting__paragraph{
+
+	.greeting__paragraph {
 		font-size: 32px;
 	}
+
 	.services__list {
 		flex-direction: column;
 		gap: 15px;
@@ -478,18 +477,21 @@
 	.personality__container {
 		gap: 0;
 	}
+
 	.personality__img {
 		right: 5%;
 	}
 }
 
 @media (max-width: 530px) {
-	.greeting__container{
+	.greeting__container {
 		padding-left: 20px;
 	}
-	.hover-animation__text{
+
+	.hover-animation__text {
 		font-size: 32px;
 	}
+
 	.personality__container {
 		position: relative;
 	}
@@ -505,20 +507,23 @@
 }
 
 @media (max-width: 440px) {
-	.services__item{
+	.services__item {
 		height: 300px;
 	}
-	.hover-animation__text{
+
+	.hover-animation__text {
 		font-size: 26px;
 	}
+
 	.personality__img {
 		right: 15%;
 		top: 25%;
 		width: 50%;
 	}
 }
+
 @media (max-width: 400px) {
-	.greeting__paragraph{
+	.greeting__paragraph {
 		font-size: 26px;
 		font-weight: 700;
 		text-shadow: 2px 2px 2px rgb(252, 120, 142);
@@ -526,12 +531,14 @@
 }
 
 @media (max-width: 380px) {
-	.services__item{
+	.services__item {
 		height: 250px;
 	}
-	.hover-animation__text{
+
+	.hover-animation__text {
 		font-size: 22px;
 	}
+
 	.personality__title {
 		margin-bottom: 15px;
 	}
@@ -569,19 +576,22 @@
 }
 
 @media (max-width: 360px) {
-	.personality__subtitle::after{
+	.personality__subtitle::after {
 		width: 2px;
 		height: 140px;
 		top: 62%;
 		left: 0;
 	}
-	.personality__title{
+
+	.personality__title {
 		font-size: 22px;
 	}
+
 	.personality__img {
 		top: 20%;
 	}
-	.contacts__title{
+
+	.contacts__title {
 		font-size: 22px;
 	}
 }
