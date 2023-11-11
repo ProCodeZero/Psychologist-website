@@ -12,12 +12,6 @@
 	}
 }
 
-@supports (-webkit-overflow-scrolling: touch) {
-	body * {
-		background-attachment: scroll;
-	}
-}
-
 // ------------COMMON------------------------------------------------------------>
 html,
 body {
