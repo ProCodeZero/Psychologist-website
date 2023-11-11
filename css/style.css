@@ -374,7 +374,7 @@ body {
 .greeting {
   background: url(../pictures/background_greeting.jpg);
   background-size: cover;
-  height: 100lvh;
+  height: 100svh;
   width: 100%;
   background-attachment: fixed;
   background-position: left;
@@ -793,7 +793,7 @@ body {
     background: url(../pictures/background_greeting--mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100lvh;
+    height: 100svh;
     min-height: -web-fill-available;
   }
   .services__item {
