@@ -374,6 +374,11 @@
 		gap: 5%;
 	}
 
+	.services__list--service {
+		display: grid;
+		grid-template-columns: repeat(2, 45%);
+	}
+
 	.services__item:last-child {
 		display: none;
 	}
@@ -426,6 +431,10 @@
 		gap: 15px;
 	}
 
+	.services__list--service {
+		grid-template-columns: 1fr;
+	}
+
 	.services__item {
 		height: 550px;
 	}
@@ -472,6 +481,7 @@
 		background-size: cover;
 		height: 100svh;
 	}
+
 	.services__item {
 		height: 400px;
 	}
