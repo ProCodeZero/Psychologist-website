@@ -88,6 +88,8 @@ body {
   font-weight: 300;
   font-size: 16px;
   letter-spacing: 0.1em;
+  height: 100%;
+  min-height: -web-fill-available;
 }
 
 .body-wrapper {
@@ -372,13 +374,14 @@ body {
 .greeting {
   background: url(../pictures/background_greeting.jpg);
   background-size: cover;
-  height: 100svh;
+  height: 100lvh;
   width: 100%;
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
+  min-height: -web-fill-available;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -790,7 +793,8 @@ body {
     background: url(../pictures/background_greeting--mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100svh;
+    height: 100lvh;
+    min-height: -web-fill-available;
   }
   .services__item {
     height: 400px;

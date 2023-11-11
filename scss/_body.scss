@@ -17,6 +17,7 @@
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	min-height: -web-fill-available;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -471,6 +472,7 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 100lvh;
+		min-height: -web-fill-available;
 	}
 	.services__item {
 		height: 400px;
