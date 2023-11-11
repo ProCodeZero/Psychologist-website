@@ -789,6 +789,12 @@ body {
   }
 }
 @media (max-width: 560px) {
+  .greeting {
+    background: url(../pictures/background_greeting--mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
   .services__item {
     height: 400px;
   }
