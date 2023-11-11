@@ -373,6 +373,7 @@ body {
   background: url(../pictures/background_greeting.jpg);
   background-size: cover;
   height: 100vh;
+  width: 100%;
   background-attachment: fixed;
   background-position: left;
   background-repeat: no-repeat;
@@ -381,7 +382,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
@@ -793,6 +793,7 @@ body {
     background: url(../pictures/background_greeting--mobile.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100%;
   }
   .services__item {
     height: 400px;
