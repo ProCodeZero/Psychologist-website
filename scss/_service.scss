@@ -1,24 +1,26 @@
-.header--service{
+.header--service {
 	color: white;
 	background-image: url("../pictures/services/service_head_background.jpg");
-	background-size:cover;
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center 65%;
 	height: 150px;
 }
+
 @media (max-width: 767px) {
-	.header--service{
+	.header--service {
 		color: white;
 		background-image: none;
 		height: 0;
 	}
 }
 
-.hover-animation__price{
+.hover-animation__price {
 	font-size: 14px;
 	font-weight: 400;
 	padding-top: 10px;
 }
-.services__list--service{
+
+.services__list--service {
 	margin-bottom: 80px;
 }

@@ -22,9 +22,9 @@ $("a[href^='#']").on("click", function () {
 });
 
 const burger = document.querySelector('.header__burger');
-if (burger){
+if (burger) {
 	const navigation = document.querySelector('.navigation__list');
-	burger.addEventListener('click', function(e) {
+	burger.addEventListener('click', function (e) {
 		document.body.classList.toggle('_lock');
 		burger.classList.toggle('_active');
 		navigation.classList.toggle('_active');
