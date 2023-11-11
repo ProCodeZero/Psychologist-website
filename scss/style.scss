@@ -12,6 +12,12 @@
 	}
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+	body * {
+		background-attachment: scroll;
+	}
+}
+
 // ------------COMMON------------------------------------------------------------>
 html,
 body {
@@ -78,34 +84,40 @@ body {
 @import "_body";
 
 @media (max-width: 980px) {
-	.container{
+	.container {
 		margin-top: 50px;
 	}
-	.header__container{
+
+	.header__container {
 		margin-top: 0;
 	}
-	.main-link{
+
+	.main-link {
 		width: 70%;
 	}
 }
+
 @media (max-width: 650px) {
-	.main-link{
+	.main-link {
 		font-size: 14px;
 		padding: 15px 20px;
 	}
 }
+
 @media (max-width: 440px) {
-	.main-link{
+	.main-link {
 		width: 80%;
 	}
 }
+
 @media (max-width: 400px) {
-	.main-link{
+	.main-link {
 		width: 90%;
 	}
 }
+
 @media (max-width: 360px) {
-	.main-link{
+	.main-link {
 		font-size: 12px;
 	}
 }
