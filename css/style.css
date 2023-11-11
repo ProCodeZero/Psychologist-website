@@ -150,7 +150,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 70px;
-  position: relative;
+  position: static;
   margin: 0px 2% 0px 2%;
 }
 
@@ -238,10 +238,22 @@ body {
   .header__logo {
     display: none;
   }
+  .header {
+    position: absolute;
+    top: 100lvh;
+  }
+  .header__container {
+    min-height: 0;
+    flex-direction: row-reverse;
+  }
+  .header__navigation {
+    position: sticky;
+    top: 15px;
+  }
   .navigation__list {
     position: absolute;
-    top: 110px;
-    right: 10%;
+    top: 55px;
+    right: 15px;
     flex-direction: column;
     align-items: flex-end;
     gap: 7vh;
@@ -251,8 +263,8 @@ body {
   }
   .burger-wrapper {
     position: absolute;
-    top: 55px;
-    right: 10%;
+    top: 0;
+    right: 15px;
     height: 45px;
     width: 45px;
     display: block;
@@ -973,6 +985,10 @@ body {
   font-size: 14px;
   font-weight: 400;
   padding-top: 10px;
+}
+
+.services__list--service {
+  margin-bottom: 80px;
 }
 
 @media (max-width: 980px) {
