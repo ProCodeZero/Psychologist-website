@@ -8,7 +8,7 @@
 .greeting {
 	background: url(../pictures/background_greeting.jpg);
 	background-size: cover;
-	height: 100vh;
+	height: 100lvh;
 	width: 100%;
 	background-attachment: fixed;
 	background-position: left;
@@ -27,10 +27,6 @@
 	-webkit-box-pack: center;
 	-ms-flex-pack: center;
 	justify-content: center;
-	// Adaptive position for back
-	background-position: left;
-	background-repeat: no-repeat;
-	background-size: cover;
 	background-color: #1d1d1d;
 	padding-top: 1px;
 	padding-bottom: 1px;
@@ -474,7 +470,7 @@
 		background: url(../pictures/background_greeting--mobile.jpg);
 		background-repeat: no-repeat;
 		background-size: cover;
-		height: 100svh;
+		height: 100lvh;
 	}
 	.services__item {
 		height: 400px;

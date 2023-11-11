@@ -372,7 +372,7 @@ body {
 .greeting {
   background: url(../pictures/background_greeting.jpg);
   background-size: cover;
-  height: 100vh;
+  height: 100svh;
   width: 100%;
   background-attachment: fixed;
   background-position: left;
@@ -382,9 +382,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-position: left;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-color: #1d1d1d;
   padding-top: 1px;
   padding-bottom: 1px;
