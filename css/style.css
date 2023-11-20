@@ -489,6 +489,7 @@ body ::-moz-selection {
   background-repeat: no-repeat;
   position: relative;
   display: flex;
+  min-height: -web-fill-available;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -911,6 +912,7 @@ body ::-moz-selection {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100svh;
+    min-height: -web-fill-available;
   }
   .services__item {
     height: 400px;
