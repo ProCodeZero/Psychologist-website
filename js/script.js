@@ -1,3 +1,4 @@
+// Scroll
 $(".scrollto a").on("click", function () {
 	let href = $(this).attr("href");
 
@@ -21,12 +22,15 @@ $("a[href^='#']").on("click", function () {
 	return false;
 });
 
+// Burger menu
 const burger = document.querySelector('.header__burger');
-if (burger) {
+const burgerWrapper = document.querySelector('.burger-wrapper');
+if (burger || burgerWrapper) {
 	const navigation = document.querySelector('.navigation__list');
-	burger.addEventListener('click', function (e) {
+	burgerWrapper.addEventListener('click', function (e) {
 		document.body.classList.toggle('_lock');
 		burger.classList.toggle('_active');
 		navigation.classList.toggle('_active');
 	})
 }
+// 

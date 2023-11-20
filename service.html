@@ -21,7 +21,7 @@
 	<!-- Плавный скролл -->
 	<script src="https://code.jquery.com/jquery-3.7.1.min.js"
 		integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-	<title>Клинический психолог</title>
+	<title>Услуги клинического психолога</title>
 </head>
 
 <body>
@@ -32,28 +32,28 @@
 				<nav class="header__navigation navigation">
 					<ul class="navigation__list">
 						<li class="navigation__item">
-							<a href="index.html" class="navigation__link">Главная</a>
+							<a href="index.html" class="navigation__link navigation__link--service">Главная</a>
 						</li>
 						<li class="navigation__item--active">
-							<a href="service.html" class="navigation__link ">Услуги</a>
+							<a href="service.html" class="navigation__link navigation__link--service">Услуги</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#" class="navigation__link ">Документы</a>
+							<a href="documents.html" class="navigation__link navigation__link--service">Документы</a>
 						</li>
 						<li class="navigation__item">
-							<a href="#" class="navigation__link ">Контакты</a>
+							<a href="contacts.html" class="navigation__link navigation__link--service">Контакты</a>
 						</li>
 					</ul>
-					<div class="burger-wrapper"><span href="#" class="header__burger"><span></span></>
+					<div class="burger-wrapper burger-wrapper--service"><span class="header__burger"><span></span></>
 					</div>
 				</nav>
 			</div>
 		</header>
 		<main class="main">
 			<div class="main__wrapper wrapper">
-				<section id="services" class="main__services services">
+				<section id="services" class="main__services services services--service">
 					<div class="services__container container">
-						<h2 class="services__title main-title">Услуги</h2>
+						<h2 class="services__title main-title services__title--service">Услуги</h2>
 						<div class="services__list services__list--service">
 							<!-- Услуги -->
 							<article class="services__item">
@@ -62,7 +62,7 @@
 										<img class="services__image" src="pictures/services/psychological_consultation.jpg"
 											alt="Urgent Psychological Consultation" />
 										<a href="" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Психологическая консультация
+										<h4 class="hover-animation__text hover-animation__text--service">Психологическая консультация
 											<p class="hover-animation__price">
 												4000 ₽ — 50 минут</p>
 										</h4>
@@ -75,7 +75,7 @@
 										<img class="services__image" src="pictures/services/psychological_consultation_for_child.jpg"
 											alt="Urgent Psychological Consultation" />
 										<a href="" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Детская консультация
+										<h4 class="hover-animation__text hover-animation__text--service">Детская консультация
 											<p class="hover-animation__price">
 												4000 ₽ — 50 минут</p>
 										</h4>
@@ -90,7 +90,8 @@
 										<img class="services__image" src="pictures/services/psychological_consultation_course.jpg"
 											alt="Urgent Psychological Consultation" />
 										<a href="" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Психологическая сессия<br>(10 сеансов)
+										<h4 class="hover-animation__text hover-animation__text--service">Психологическая сессия<br>(10
+											сеансов)
 											<p class="hover-animation__price">
 												при единовременной оплате — 35000 ₽</p>
 										</h4>
@@ -105,7 +106,7 @@
 										<img class="services__image" src="pictures/services/correspondence_clinical_support.jpeg"
 											alt="Urgent Psychological Consultation" />
 										<a href="" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Заочное клиническое сопровождение
+										<h4 class="hover-animation__text hover-animation__text--service">Заочное клиническое сопровождение
 											<p class="hover-animation__price">
 												4500 ₽ — весь пакет документов передаётся Вашему новому психологу</p>
 										</h4>
@@ -120,7 +121,8 @@
 										<img class="services__image" src="pictures/services/psychological_expertise.jpeg"
 											alt="Urgent Psychological Consultation" />
 										<a href="" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Психологическая экспертиза<p class="hover-animation__price">
+										<h4 class="hover-animation__text hover-animation__text--service">Психологическая экспертиза<p
+												class="hover-animation__price">
 												от 15000 ₽— произвожу экспертизу подэкспертных исключительно не достигших 18-ти летнего возраста
 											</p>
 										</h4>
@@ -140,16 +142,16 @@
 			<div class="footer__menu menu">
 				<ul class="menu__list">
 					<li class="menu__item">
-						<a href="#" class="menu__link scrollto ">Главная</a>
+						<a href="index.html" class="menu__link scrollto ">Главная</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link scrollto">Услуги</a>
+						<a href="service.html" class="menu__link scrollto">Услуги</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link scrollto">Документы</a>
+						<a href="documents.html" class="menu__link scrollto">Документы</a>
 					</li>
 					<li class="menu__item">
-						<a href="#" class="menu__link scrollto">Контакты</a>
+						<a href="contacts.html" class="menu__link scrollto">Контакты</a>
 					</li>
 				</ul>
 			</div>
@@ -161,6 +163,8 @@
 	</footer>
 	</div>
 	</div>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

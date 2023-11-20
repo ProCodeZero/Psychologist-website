@@ -418,6 +418,9 @@
 }
 
 @media (max-width: 767px) {
+	.greeting{
+		z-index: 10;
+	}
 	.greeting__title {
 		font-size: 56px;
 	}
