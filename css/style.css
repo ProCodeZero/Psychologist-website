@@ -1058,7 +1058,7 @@ body ::-moz-selection {
     top: -3.8vh;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 440px) {
   .hover-animation__text--service {
     top: 30%;
   }
@@ -1087,6 +1087,11 @@ body ::-moz-selection {
   margin-bottom: 80px;
 }
 
+@media (max-width: 300px) {
+  .hover-animation__text--service {
+    font-size: 19px;
+  }
+}
 @media (max-width: 980px) {
   .container {
     margin-top: 50px;

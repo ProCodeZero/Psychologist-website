@@ -47,7 +47,7 @@
 	}
 }
 
-@media (max-width: 400px) {
+@media (max-width: 440px) {
 	.hover-animation__text--service {
 		top: 30%;
 	}
@@ -78,4 +78,9 @@
 
 .services__list--service {
 	margin-bottom: 80px;
+}
+@media (max-width: 300px) {
+	.hover-animation__text--service{
+		font-size: 19px;
+	}
 }
