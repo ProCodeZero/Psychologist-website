@@ -136,6 +136,7 @@
 		border-radius: 10px;
 		opacity: 0;
 		transition: 0.3s opacity;
+		pointer-events: none;
 	}
 
 	.navigation__list._active {
@@ -143,6 +144,7 @@
 		justify-content: end;
 		text-shadow: 1px 1px 1px rgb(0, 0, 0);
 		transition: 0.3s opacity;
+		pointer-events: all;
 	}
 
 	.burger-wrapper {

@@ -274,12 +274,14 @@ body ::-moz-selection {
     border-radius: 10px;
     opacity: 0;
     transition: 0.3s opacity;
+    pointer-events: none;
   }
   .navigation__list._active {
     opacity: 1;
     justify-content: end;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     transition: 0.3s opacity;
+    pointer-events: all;
   }
   .burger-wrapper {
     position: absolute;
@@ -1090,6 +1092,46 @@ body ::-moz-selection {
 @media (max-width: 300px) {
   .hover-animation__text--service {
     font-size: 19px;
+  }
+}
+.header--documents {
+  color: white;
+  background-image: url("../pictures/services/service_head_background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center 65%;
+  height: 100px;
+}
+
+.body-wrapper--documents {
+  min-height: 0px;
+}
+
+.swiper {
+  margin: 20px 0px 40px 0px;
+  max-width: 1600px;
+}
+
+.documents__title--documents {
+  padding-top: 25px;
+}
+
+.picture--documents {
+  text-align: center;
+}
+
+.swiper-pagination-bullet-active,
+.swiper-button-prev,
+.swiper-button-next {
+  --swiper-theme-color: #ffa8a8;
+}
+
+@media (max-width: 767px) {
+  .header--documents {
+    top: 0;
+  }
+  .main__wrapper {
+    padding-top: 50px;
   }
 }
 @media (max-width: 980px) {
