@@ -1,6 +1,7 @@
-.title--documents{
-	height: 90px;
+.title--documents {
+	height: 80px;
 }
+
 .swiper {
 	margin: 20px 0px 40px 0px;
 	max-width: 1600px;
@@ -13,7 +14,18 @@
 .swiper-pagination-bullet-active,
 .swiper-button-prev,
 .swiper-button-next {
-	--swiper-theme-color: #ffa8a8;
+	--swiper-theme-color: #272727;
+}
+
+.big-pictures {
+	text-align: center;
+}
+
+.img1,
+.img2,
+.img3 {
+	width: 90%;
+	margin: 15px auto;
 }
 
 .institutions {
@@ -24,72 +36,92 @@
 
 .institute {
 	margin-bottom: 30px;
+	padding: 0px 3%;
 	position: relative;
+	background-color: #272727;
+	border-radius: 15px;
+	transition: all .4s;
 }
 
 .institute__link {
-	color: #000;
+	color: #ffffff;
 	padding: 5px;
-
-	::after,
-	::before {
-		content: '';
-		background-color: #ffffff;
-		height: 4px;
-		width: 0%;
-		position: absolute;
-		transition: .4s all linear;
-	}
-
-	::before {
-		top: 0;
-		left: 0;
-	}
-
-	::after {
-		right: 0;
-		bottom: 0;
-	}
+	transition: all .4s;
 }
 
-.institute__link:hover ::after {
-	background-color: #000000;
-	width: 85%;
-	transition: .4s all linear;
+.institute:hover .institute__name {
+	color: #fd9494;
+	transition: all .4s;
 }
 
-.institute__link:hover ::before {
-	background-color: #000000;
-	width: 85%;
-	transition: .4s all linear;
-}
-
-.institute__link:hover>.institute__name {
-	text-shadow: 1px 0px 0px #000;
+.institute:hover .institute__name::after {
+	background-color: #ffffff;
 	transition: all .4s;
 }
 
 .institute__name {
+	position: relative;
 	padding-top: 7px;
 	font-weight: bold;
-	color: #fd9494;
-	padding-bottom: .5rem;
+	color: #ffffff;
+	text-shadow: 1px 1px 1px #000;
+	margin-bottom: .5rem;
+	transition: all .4s;
+}
+
+.institute__name::after {
+	content: "";
+	position: absolute;
+	width: 85%;
+	height: 2px;
+	bottom: -3px;
+	left: 0;
+	background-color: #fd9494;
 	transition: all .4s;
 }
 
 .institute__city {
-	color: #000000;
+	color: #ffffff;
 	font-weight: 500;
 	padding-bottom: 15px;
+	transition: all .4s;
 }
 
 .institute__description {
 	line-height: 1.5;
 }
 
-@media (max-width: 767px) {
+@media (min-width:981px) {
+	.title--documents {
+		padding-top: 35px;
+	}
 
+	.big-pictures {
+		display: none;
+	}
+}
+
+@media (max-width: 980px) {
+	.title--documents {
+		margin-bottom: -65px;
+	}
+
+	.swiper {
+		display: none;
+		width: 0;
+		height: 0;
+		pointer-events: none;
+	}
+}
+
+@media (max-width: 767px) {
 	.main__wrapper {
 		padding-top: 50px;
+	}
+}
+
+@media (max-width: 300px) {
+	.title--documents {
+		font-size: 26px;
 	}
 }

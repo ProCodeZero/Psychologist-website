@@ -1,3 +1,9 @@
-.title--contacts{
-	height: 90px;
+.title--contacts {
+	height: 80px;
+}
+
+@media (min-width:981px) {
+	.title--contacts {
+		padding-top: 35px;
+	}
 }

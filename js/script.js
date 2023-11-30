@@ -34,3 +34,8 @@ if (burger || burgerWrapper) {
 	})
 }
 // 
+
+const img1 = document.getElementById('img1');
+img1.addEventListener('click', (e) => {
+	console.log('img1 :>> ', img1);
+})
