@@ -375,6 +375,11 @@
 		gap: 5%;
 	}
 
+	.services__list--service {
+		display: grid;
+		grid-template-columns: repeat(2, 45%);
+	}
+
 	.services__item:last-child {
 		display: none;
 	}
@@ -414,6 +419,9 @@
 }
 
 @media (max-width: 767px) {
+	.greeting{
+		z-index: 10;
+	}
 	.greeting__title {
 		font-size: 56px;
 	}
@@ -425,6 +433,10 @@
 	.services__list {
 		flex-direction: column;
 		gap: 15px;
+	}
+
+	.services__list--service {
+		grid-template-columns: 1fr;
 	}
 
 	.services__item {
@@ -472,7 +484,6 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		height: 100svh;
-		min-height: -web-fill-available;
 	}
 	.services__item {
 		height: 400px;
