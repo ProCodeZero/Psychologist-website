@@ -18,142 +18,85 @@
 	<meta name="msapplication-TileColor" content="#00a300">
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="css/style.css" />
-	<title>Клинический психолог</title>
+	<!-- Swiper -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<title>Документы</title>
 </head>
 
 <body>
-	<div class="body-wrapper">
-		<header id="header" class="header">
+	<div class="body-wrapper body-wrapper--documents">
+		<header id="header" class="header header--additional">
 			<div class="header__container container">
 				<div class="header__logo logo">Личный психолог</div>
 				<nav class="header__navigation navigation">
 					<ul class="navigation__list">
+						<li class="navigation__item">
+							<a href="index.html" class="navigation__link navigation__link--additional">Главная</a>
+						</li>
+						<li class="navigation__item">
+							<a href="service.html" class="navigation__link navigation__link--additional">Услуги</a>
+						</li>
 						<li class="navigation__item--active">
-							<a href="index.html" class="navigation__link">Главная</a>
+							<a href="documents.html" class="navigation__link navigation__link--additional">Документы</a>
 						</li>
 						<li class="navigation__item">
-							<a href="service.html" class="navigation__link ">Услуги</a>
-						</li>
-						<li class="navigation__item">
-							<a href="documents.html" class="navigation__link ">Документы</a>
-						</li>
-						<li class="navigation__item">
-							<a href="contacts.html" class="navigation__link ">Контакты</a>
+							<a href="contacts.html" class="navigation__link navigation__link--additional">Контакты</a>
 						</li>
 					</ul>
-					<div class="burger-wrapper"><span class="header__burger"><span></span></>
+					<div class="burger-wrapper burger-wrapper--additional"><span class="header__burger"><span></span></>
 					</div>
 				</nav>
 			</div>
 		</header>
-		<section id="parallax" class="greeting">
-			<div id="greeting" class="greeting__container container">
-				<div class="greeting__wrap">
-					<p class="greeting__paragraph">Официальный сайт</p>
-					<h1 class="greeting__title">Карина Попова</h1>
-					<p class="greeting__paragraph">Дипломированный психолог</p>
-				</div>
-			</div>
-			<a href="#services" class="greeting__btn-to-header scrollto" title="Scroll down"></a>
-		</section>
-
 		<main class="main">
 			<div class="main__wrapper wrapper">
-				<section id="services" class="main__services services">
-					<div class="services__container container">
-						<h2 class="services__title main-title">Услуги</h2>
-						<div class="services__list">
-							<!-- Услуги -->
-							<article class="services__item">
-								<a href="#" class="services__link" target="_blank">
-									<div class="services__image-wrapper">
-										<img class="services__image" src="pictures/services/psychological_consultation.jpg"
-											alt="Urgent Psychological Consultation" />
-										<a href="#" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Психологическая консультация</h4>
-									</div>
-								</a>
-							</article>
-							<article class="services__item">
-								<a href="#" class="services__link" target="_blank">
-									<div class="services__image-wrapper">
-										<img class="services__image" src="pictures/services/psychological_consultation_for_child.jpg"
-											alt="Urgent Psychological Consultation" />
-										<a href="#" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Детская консультация</h4>
-									</div>
-									<div class="services__hover-animation hover-animation">
-									</div>
-								</a>
-							</article>
-							<article class="services__item">
-								<a href="#" class="services__link" target="_blank">
-									<div class="services__image-wrapper">
-										<img class="services__image" src="pictures/services/psychological_consultation_course.jpg"
-											alt="Urgent Psychological Consultation" />
-										<a href="#" class="hover-animation__link">Записаться</a>
-										<h4 class="hover-animation__text">Психологическая сессия<br>(10 сеансов)</h4>
-									</div>
-									<div class="services__hover-animation hover-animation">
-									</div>
-								</a>
-							</article>
-						</div>
-						<a href="#" class="services__out-link main-link">Посмотреть все услуги</a>
-					</div>
-				</section>
-				<section id="personality" class="main__personality personality">
-					<div class="personality__container container">
-						<div class="personality__left-side">
-							<h2 class="personality__title main-title">Карина Попова</h2>
-							<p class="personality__subtitle">Дипломированный психолог</p>
-							<ul class="personality__list">
-								<li class="personality__list-item">
-									<p class="personality__text">Современные безопасные и эффективные методы лечения</p>
-								</li>
-								<li class="personality__list-item">
-									<p class="personality__text">Регулярно на связи</p>
-								</li>
-								<li class="personality__list-item">
-									<p class="personality__text">Отвечу на ваши вопросы в Telegram в ходе консультации</p>
-								</li>
-							</ul>
-						</div>
-						<img class="personality__img" src="pictures/personality/personality_photo.jpg" alt="It's me :)">
-					</div>
-				</section>
-				<section id="contacts" class="main__contacts contacts">
-					<div class="contacts__container container">
-						<div class="contacts__side">
-							<h2 class="contacts__title main-title">Контакты</h2>
-							<div class="contacns__text-block">
-								<p class="contacts__paragraph"><b>Телефон:</b><br>+7-904-535-02-59 <br><br>
-									<b>E-mail:</b><br> kondr_ull@bk.ru <br><br>
-								<ul class="contacts__list">
-									<li class="contacts__list-item">
-										<p class="contacts__text">Современные безопасные и эффективные методы лечения</p>
-									</li>
-									<li class="contacts__list-item">
-										<p class="contacts__text">Регулярно на связи</p>
-									</li>
-									<li class="contacts__list-item">
-										<p class="contacts__text">Отвечу на ваши вопросы в Telegram в ходе консультации</p>
-									</li>
-								</ul>
-								<br><br>
-								<b>Честно</b><br>
-								Не навязываю ненужные консультации
-								<br><br>
-								100% предоплата за 12 часов до начала консультации
-								<br><br>
-								Отменить/перенести назначенную консультацию возможно только за 24 часа, в противном случае средства не
-								возвращаются
-								</p>
-
+				<section id="documents" class="main__documents documents">
+					<div class="documents__container container">
+						<h2 class="documents__title main-title title--additional title--documents">Документы</h2>
+						<!-- Slider main container -->
+						<div class="swiper">
+							<!-- Additional required wrapper -->
+							<div class="swiper-wrapper">
+								<!-- Slides -->
+								<div class="swiper-slide"><img id="img1" class="picture--documents"
+										src="pictures/documents/Certificate_1.jpg" alt="Certificate_1" width="80%"></div>
+								<div class="swiper-slide"><img id="img2" class="picture--documents"
+										src="pictures/documents/Certificate_2.jpg" alt="Certificate_2" width="80%"></div>
+								<div class="swiper-slide"><img id="img3" class="picture--documents"
+										src="pictures/documents/Certificate_3.jpg" alt="Certificate_3" width="80%"></div>
 							</div>
+							<!-- If we need pagination -->
+							<div class="swiper-pagination"></div>
+							<!-- If we need navigation buttons -->
+							<div class="swiper-button-prev"></div>
+							<div class="swiper-button-next"></div>
 						</div>
-						<img class="contacts__img" src="pictures/contacts/contacts_photo.jpg" alt="It's me :)">
 					</div>
+				</section>
+				<section class="big-pictures">
+					<img src="pictures/documents/Certificate_1.jpg" alt="" class="img1">
+					<img src="pictures/documents/Certificate_2.jpg" alt="" class="img2">
+					<img src="pictures/documents/Certificate_3.jpg" alt="" class="img3">
+				</section>
+				<section class="institutions">
+					<article class="institute">
+						<a href="https://vuzopedia.ru/vuz/2786" class="institute__link" target="_blank">
+							<h4 class="institute__name">Институт экономики и управления в медицине и социальной сфере</h4>
+							<p class="institute__city">г. Краснодар</p>
+							<p class="institute__description">В институте реализуется уровневая
+								подготовка по основным образовательным программам высшего, среднего, начального и дополнительного
+								профессионального образования.</p>
+						</a>
+					</article>
+					<article class="institute">
+						<a href="https://iro23.ru/" class="institute__link" target="_blank">
+							<h4 class="institute__name">Институт развития образования</h4>
+							<p class="institute__city">г. Краснодар</p>
+							<p class="institute__description">Институт развития образования Краснодарского края – одно из самых
+								значимых составляющих образовательного пространства региона. Здесь, под эгидой краевого Министерства,
+								сформирована развитая экосистема образования, науки и инноваций.</p>
+						</a>
+					</article>
 				</section>
 			</div>
 	</div>
@@ -183,10 +126,11 @@
 		</div>
 	</footer>
 	</div>
+	</div>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/mouseMove.js"></script>
-	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/swiper.js"></script>
 </body>
 
 </html>
